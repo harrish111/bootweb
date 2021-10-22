@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 100vh;
+}
+.navbar-style{
+    box-shadow: 1px 5px 10px 1px;
+    text-transform: capitalize;
+}
+.logo{
+    height: 48px;
+    padding: 2px 10px;
+}
+.icon-bar{
+    background: black;
+}
+li a{
+    color: #000;
+    font-weight: bold;
+}
+.big-text{
+    font-size: 52px;
+    margin: 20px 0;
+    color: darkgreen;
+}
+.h-text{
+    font-size: 62px;
+    margin: 25px 0;
+    color: darkgrey;
+}
+a.btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+a.btn-first{
+    background-color: transparent;
+    border: 1px solid darkslategray;
+    color: #333;
+}
+a.btn-second{
+    background: transparent;
+    border: 1px solid darkslategray;
+    color: #333;
+}
+a.btn:hover{
+    background: darkorange;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s; 
+}
