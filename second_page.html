@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="index_style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="second_page_style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+		*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    color: #fff;
+}
+body{
+    background: url(bgg.jpg);
+    background-size: cover;
+}
+nav{
+    background-color: rgb(11, 13, 12, 0.7);
+}
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #fff;
+    font-size: large;
+    color: #fff;
+}
+nav h2{
+    color: #fff;
+}
+		#favrite{
+			font-weight: bold;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+		}
+		.col-sm-4 ul li{
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
-    <div class="container-fluid m-0 p-0">
-        <div class="row">
-            <div class="col-sm-12">
-                <nav class="navbar navbar-expand-lg">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-lg">
                     <h2 style="font-style: italic;">Web Engineering</h2>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -24,7 +61,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="Home_page.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="second_page.html" class="nav-link">My Hobbies</a>
@@ -42,26 +79,30 @@
                             </li>
                       </ul>
                     </div>
-                  </nav>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="css.png" alt="">
-                        <h1 style="margin-top: -15px;">Html + CSS</h1><hr class="hr-style">
-                        <h1>Intro to Html + Css</h1>
-                        <details style="text-decoration: none;"> 
-		                 <summary>Html</summary>
-	                       <p>HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content</details> 
-                        <details>
-                         <summary>Css</summary>
-                          <p>CSS is the language we use to style a Web page. CSS describes how HTML elements are to be displayed on screen, paper, or in other media</details>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </nav>
+			</div>
+		</div>
+			<div class="row mt-5">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-4 text-center">
+					<h1 id="favrite">Our Hobbies</h1>
+					<ul>
+						<li>Collecting Ancient Things</li>
+						<li>Sketching</li>
+						<li>Playing Games</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 text-center">
+					<h1 id="favrite">Our Favourite Games</h1>
+					<ul>
+						<li>Cricket</li>
+						<li>Football</li>
+						<li>Badminton</li>
+					</ul>
+				</div>
+				<div class="col-sm-2"></div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

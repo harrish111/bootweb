@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    color: #fff;
+}
+body{
+    background: url(bgg.jpg);
+    background-size: cover;
+}
+nav{
+    background-color: rgb(11, 13, 12, 0.7);
+}
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #fff;
+    font-size: large;
+    color: #fff;
+}
+nav h2{
+    color: #fff;
+}
+details>summary {
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+.hr-style{
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+details>summary::-webkit-details-marker {
+    display: none;
+}  
+details>summary::before {
+   content: '✔';
+}  
+details[open]>summary::before {
+   content: '😂';
+}   
+details[open]>summary {
+   margin-bottom: 0.5rem;
+}
